@@ -33,11 +33,7 @@ window.addEventListener('click', function(e) {
     e.preventDefault();
   }
 });
-window.onerror = function(message, source, line, col, error) {
-  var text = error ? error.stack || error : message + ' (at ' + source + ':' + line + ':' + col + ')';
-  errors.textContent += text + '\n';
-  errors.style.display = '';
-};
+
 
 </script>
 
